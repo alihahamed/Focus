@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/233ea08d99.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="notes/notes.css">
+</head>
+<body>
+    <header id="head">
+    </header> 
+    <p id="quoteContent"></p>
+    <div id="container">
+        <p id="welcomeTxt"></p>
+        <div id="controls-choose">
+            <button id="focusBtn" class="focusBtnn" onclick="focus()">FOCUS</button>
+            <span>
+                <button id="shortBtn" onclick="shortBreak()">Short-Break</button>
+            </span>
+            <span>
+                <button id="longBtn" onclick="longBreak()">Long-Break</button>
+            </span>
+        </div>
+        <div id="timer">
+            <p id="minutes-seconds">25:00</p>
+        </div>
+        <div id="controls-start">
+            <button id="startBtn" onclick="startTimer()">Start</button>
+            <button class="fa-solid fa-arrows-turn-to-dots" id="resetBtn" onclick="resetTimer()"></button>
+            <button class="fa-solid fa-expand"id="fullBtn" onclick="fullscreen()"></button>
+        </div>
+            <p id="message"></p>
+            <button id="backgroundBtn" onclick="change()">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+    </div>
+ 
+
+    <div id="notesContainer">
+    <p id="heading">Create a new note.</p>
+    <div id="addNotes">
+        <i class="fa-solid fa-plus"></i>
+    </div>
+    <div id="notes"></div>
+</div>
+    
+
+</body>
+<script src="script.js"></script>
+<script src="notes/notes.js"></script>
+</html>
