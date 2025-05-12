@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+:root{
+    --size:150px
+}
+#notesContainer {
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    width: 350px;
+    z-index: 100;
+    padding: 1px;
+    margin: 25px;
+    max-height: 70vh;
+    float: left;
+    
+  }
+#addNotes{
+    background-color: rgba(238, 197, 16, 0.801); 
+    border: 2px solid black;
+    border-radius: 20px;  
+    padding: 8px 12px;
+    color: white;
+    text-shadow: 1.5px 1px 1px black;  
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+#addNotes i{
+    position: relative;
+    width: 100%;
+    left: 150px;
+}
+#notes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr);   /* 2 rows */
+    gap: 10px; /* Spacing between notes */
+    max-height: 70vh;
+}
+#heading{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+    font-family: "Cal Sans", sans-serif;;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: -1px -1px  rgb(92, 91, 91),
+                    1px -1px  rgb(92, 91, 91),
+                    -1px 1px  rgb(92, 91, 91),
+                    1px 1px rgb(92, 91, 91);
+}
+.note{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    background-color: rgba(223, 129, 53, 0.8); 
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 150px;
+    word-wrap: break-word;
+    border: 1px solid black;
+    max-height: calc(70vh - 50px); 
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+}
+.note:nth-child(even){
+    background-color:rgba(153, 63, 226, 0.8)
+}
+
+.note:before{
+    content: 'Click here to remove this note';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(48, 47, 48);
+    font-weight: bold;
+    background-color: rgba(88, 87, 87, 0.6);
+}

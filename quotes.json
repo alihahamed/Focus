@@ -1,0 +1,24 @@
+{
+    "quotes": [
+        {
+            "id":1,
+            "text":"There are no shortcuts to any place worth going."
+        },
+        {
+            "id":2,
+            "text":"The way to get started is to quit talking and begin doing."
+        },
+        {
+            "id":3,
+            "text":"There will be obstacles. There will be mistakes. But with hard work, there are no limits."
+        },
+        {
+            "id":4,
+            "text":"Start where you are. Use what you have. Do what you can."
+        },
+        {
+            "id":5,
+            "text":"The only thing that overcomes hard luck is hard work."
+        }
+    ]
+}

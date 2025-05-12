@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Rubik:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Rubik:ital,wght@0,500;1,500&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Coral+Pixels&family=Rubik:ital,wght@0,500;1,500&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Coral+Pixels&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,500;1,500&family=Special+Gothic+Expanded+One&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(winter.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%; 
+    box-sizing: border-box; 
+    overflow:hidden;
+}  
+#logo{
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    margin: 5px;
+    color: rgb(241, 243, 247);
+    text-shadow: 2px 2px 2px black;
+    
+}
+header{
+    position: absolute;
+    left:20px
+}
+#appLogo{
+    height: 120px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+#welcomeTxt{
+    display: flex;
+    height: 2em;
+    padding: 15px;
+    margin: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background: transparent;
+    font-size: 3em;
+    font-family:"Rubik", sans-serif; 
+    font-weight: 700;
+    color: rgb(250, 252, 162);
+    text-shadow: 2px 2px 2px black;
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+    background-color: transparent;
+    background: transparent;
+    margin: 0;
+    box-sizing: border-box;     
+    
+}
+#controls-choose{
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;;
+}
+ #controls-choose button{
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    background-color:rgb(237, 207, 151);
+    color: white;
+    text-shadow: 1.5px 1px 1px black;
+    font-family:monospace ;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px  rgb(229, 194, 127);
+    transition: all 0.3s ease;
+}
+#controls-choose button:hover{
+    background-color: rgb(228, 190, 120);
+    box-shadow:0 0 20px 10px  rgb(226, 180, 93);
+
+}
+#controls-choose button:active{
+    background-color:coral;
+}
+#timer{
+    font-family: "Cal Sans", sans-serif !important;
+    font-size: 7em;
+    padding: 0;
+    margin: 0;
+    color: rgb(234, 192, 115);
+    text-shadow: 2px 2px 3px black;
+    
+}
+#timer p{
+    padding: 2px;
+    margin: 15px;
+    font-size: 1.5em ;
+}
+#controls-start{
+    font-size: 20px;
+}
+button{
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#startBtn{
+    font-family: monospace;
+    background-image: linear-gradient(#B91372 ,#6B0F1A);
+    padding: 15px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px rgb(199, 105, 105);
+    transition: all 0.3s ease;
+    border: none;
+}
+#startBtn:hover{
+    background-color: rgb(199, 105, 105);
+    box-shadow:0 0 20px 10px rgb(150, 69, 69);
+}
+#resetBtn{
+    background-image:linear-gradient(#4154bc,#26D0CE);
+    padding: 15px;
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 20px 2px rgb(120, 235, 197);
+    transition: all 0.3s ease;
+}
+#resetBtn:hover{
+    background-color: rgb(28, 236, 167);
+    box-shadow: 0 0 20px 10px rgb(135, 229, 198);
+}
+#fullBtn{
+    background-image: linear-gradient(314deg, #1B8B00 0%, #01ff01 74%); ;
+    padding: 15px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 20px 2px green;
+    transition:all 0.3s ease;
+}
+#fullBtn:hover{
+    background-color: #68dc4b;
+    box-shadow: 0 0 20px 10px #81e967;
+}
+.focusBtnn{
+    background: none;
+    border: none;
+}
+#quoteContent{
+    position: absolute;
+    right: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin:10px;
+    font-size: 1.4em;
+    font-family: "Cal Sans", sans-serif;
+    
+    color: #B91372;
+    border: none;
+    color: tra;
+    border-radius: 5px;
+    
+}
+#message{
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 2em;
+    font-weight: 500;
+    font-weight: bold;
+    text-shadow: 2px white;
+}
+#backgroundBtn{
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    margin: 10px;
+    background-color: black;
+}
+#backgroundBtn i{
+    color: white;
+}
